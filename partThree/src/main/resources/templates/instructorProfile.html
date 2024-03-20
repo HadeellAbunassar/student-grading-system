@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Student Portal - Grading System</title>
+
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="center">
+    <div>
+        <h1>Welcome To Our Grading System  - Instructor Portal</h1>
+
+        <div th:if="${isOptionB != null and isOptionB}">
+            <form action="instructor" method="post">
+                <input type="hidden" name="options" value="showstucrs">
+                <input type="hidden" name="username" th:value="${username}">
+                <label for="courseName">Course Name:</label>
+                <input type="text" id="courseName" name="courseName">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <ul style="list-style-type: none;">
+            <ul style="list-style-type: none;">
+                <li th:each="c : ${msg}" th:text="${c}"></li>
+            </ul>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

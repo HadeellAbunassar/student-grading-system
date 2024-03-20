@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Instructor Portal</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Welcome To Our Grading System - Instructor Portal Assigning Grades</h1>
+
+    <form action="/assignGrades" method="post">
+        <div class="form-group">
+            <label for="courseName">Course Name:</label>
+            <input type="text" class="form-control" id="courseName" name="courseName" required>
+        </div>
+        <div class="form-group">
+            <label for="studentName">Student Name:</label>
+            <input type="text" class="form-control" id="studentName" name="studentName" required>
+        </div>
+        <div class="form-group">
+            <label for="grades">Grade:</label>
+            <input type="text" class="form-control" id="grades" name="grades" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+        <p th:text="${msg}"></p>
+
+
+</div>
+</body>
+</html>

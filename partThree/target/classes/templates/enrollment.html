@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Student Portal - Grading System</title>
+
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="center">
+    <div>
+        <h1>Welcome To Our Grading System  - Student Portal Enrollment Page</h1>
+        <h3 style="margin-left: 35%">Available Courses</h3>
+
+        <ul style="list-style-type: none;">
+            <ul style="list-style-type: none;">
+                <li th:each="c : ${availableCourses}" th:text="${c}"></li>
+            </ul>
+        </ul>
+        <div class="form-container">
+            <h4>Enroll in a Course -ID- :</h4>
+
+            <form action="enrollment" method="post">
+                <div class="form-group">
+                    <label for="courseId">Course ID:</label>
+                    <input type="text" id="courseId" name="courseId" required>
+                </div>
+                <input type="hidden" id="username" name="username" th:value="${username}">
+                <button type="submit" class="btn btn-primary" style="margin-top: 5%;">Submit</button>
+            </form>
+        </div>
+
+
+        <div th:if="${enrollInCourse != null}">
+            <p th:text="${enrollInCourse}"></p>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
