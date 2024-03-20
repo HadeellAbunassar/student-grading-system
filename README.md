@@ -1,5 +1,5 @@
 # student-grading-system
-# Part 1: Command-line / Sockets and JDBC Backend Implementa&on
+# Part 1: Command-line / Sockets and JDBC Backend Implementaton
 
 Task:
 Build the inital version of the Student Grading System using the command-line interface,
@@ -13,7 +13,7 @@ different courses.
 grades.
 • Implement socket communicaton for any real-tme requirements.
 
-# Part 2: Web App / Tradi&onal MVC Servlets and JSPs Implementa&on
+# Part 2: Web App / Traditonal MVC Servlets and JSPs Implementa&on
 
 Task:
 Enhance the Student Grading System by transforming it into a web applicaton using traditonal
