@@ -13,7 +13,7 @@ different courses.
 grades.
 • Implement socket communicaton for any real-tme requirements.
 
-# Part 2: Web App / Traditonal MVC Servlets and JSPs Implementa&on
+# Part 2: Web App / Traditonal MVC Servlets and JSPs Implementaton
 
 Task:
 Enhance the Student Grading System by transforming it into a web applicaton using traditonal
@@ -28,7 +28,7 @@ using JDBC.
 
 
 
-# Part 3: Web App / Spring MVC and Spring REST Implementa&on
+# Part 3: Web App / Spring MVC and Spring REST Implementaton
 
 Task:
 Advance the Student Grading System by migrating it to a web applicaton utlizing Spring MVC
