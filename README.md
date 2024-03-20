@@ -1,4 +1,4 @@
-# student-grading-system
+# Student Grading System
 # Part 1: Command-line / Sockets and JDBC Backend Implementaton
 
 Task:
